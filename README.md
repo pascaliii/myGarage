@@ -1,6 +1,6 @@
 # myGarage
 
-myGarage beinhaltet KFR-Partner-Teaser, eine bezahlte Anzeige und eine Standard-Darstellung.
+Dieses myGarage Repository beinhaltet KFR-Partner-Teaser, eine bezahlte Anzeige und eine Standard-Darstellung.
 Beide Teaser sind responsive.
 
 ![Screenshot](assets/Screenshot.png)

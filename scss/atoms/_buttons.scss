@@ -11,11 +11,21 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
     }
 
+    &:hover{
+        cursor:pointer;
+    }
+
 
     &--primary{
         background-color: $primary-accent-color;
         border: 2px solid $primary-accent-color;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+        &:hover{
+            background-color: $dark-primary-accent-color;
+            border: 2px solid $dark-primary-accent-color;
+            color: $white;
+        }
     }
 
     &--secondary{
@@ -29,6 +39,10 @@
             float: left;
             margin-top: 1px;
             margin-right: 5px;
+        }
+
+        &:hover{
+            background-color: $light-secondary-color;
         }
     }
 
@@ -48,6 +62,10 @@
         &:active{
             box-shadow: none;
             text-shadow: none;
+        }
+
+        &:hover{
+            color: $secondary-color;
         }
     }
 }

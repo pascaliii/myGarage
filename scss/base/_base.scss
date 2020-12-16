@@ -17,5 +17,27 @@ h1 {
     align-items: center;
 }
 
+ 
+
+ @media (min-width: 885px) { 
+    .grid{
+        grid-template-columns: 1fr 3fr;
+    }     
+ }
+
+ @media (max-width: 881px) { 
+    .grid{
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }     
+ }
+
+ @media (max-width: 690px) { 
+    .grid{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }     
+ }
+
+
+
 
 

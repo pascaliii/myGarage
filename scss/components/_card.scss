@@ -3,7 +3,7 @@
     background: $white;
     max-width: 900px;
     border-radius: 7px;
-    margin: 60px auto;
+    margin: 30px auto;
     box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
 
     .inner-grid{
@@ -51,6 +51,7 @@
             }
         }
         &--date{
+            margin-left:-5px;
             &:before {
                 content: url(../assets/time.svg);
                 float: left;
@@ -72,7 +73,6 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-gap: 1rem;
-        //justify-items: start;
 
         &--first{
             justify-self:start;
@@ -81,10 +81,6 @@
 
         &--second{
             justify-self:end;
-        }
-
-        &--third{
-            justify-self:start;
         }
         
     }
@@ -95,15 +91,56 @@
     }
 }
 
-@media (max-width: 840px) { 
-    .card{
-        width: 70%;
-    }
-    
- }
 
-@media (max-width: 576px) { 
+@media (min-width:410px) and (max-width: 500px){
     .card{
-        width: 70%;
+        &__header{
+            //grid-template-columns: 1fr;
+            grid-template-columns: minmax(auto, 1fr);
+        }
+
+        &__location{
+            justify-self: start;
+        }
+        
+        &__content{
+            grid-template-columns: 1fr;
+
+            &--price{
+                margin-top: 1rem;
+                justify-self: center;
+            }
+        }
+
+        &__actions{
+            grid-template-columns: 1fr;
+        }
+
     }
- }
+}
+
+@media (max-width: 410px){
+    .card{
+        &__header{
+            grid-template-columns: 90%;
+        }
+
+        &__location{
+            justify-self: start;
+        }
+        
+        &__content{
+            grid-template-columns: 90%;
+
+            &--price{
+                margin-top: 1rem;
+                justify-self: center;
+            }
+        }
+
+        &__actions{
+            grid-template-columns: 90% !important;
+        }
+
+    }
+}

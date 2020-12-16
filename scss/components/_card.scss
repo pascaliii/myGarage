@@ -1,0 +1,109 @@
+.card{
+    padding: 40px;
+    background: $white;
+    max-width: 900px;
+    border-radius: 7px;
+    margin: 60px auto;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+
+    .inner-grid{
+        display: grid;
+        grid-row-gap: 2rem;
+    }
+
+
+    &__header{
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+
+    &__title{
+        margin-top: 0;
+        font-size: 1.5rem;
+        font-family: 'NotoSansJP Bold';
+    }
+
+    &__location{
+        justify-self: end;
+        align-self:end;
+        &:before {
+            content: url(../assets/location.svg);
+            float: left;
+            margin-top: 1px;
+            margin-right: 5px;
+        }
+    }
+    &__rating{
+        align-self:end;
+        margin-bottom: -2px;
+    }
+
+    &__content{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        &--service{
+            &:before {
+                content: url(../assets/check.svg);
+                float: left;
+                margin-top: 1px;
+                margin-right: 5px;
+            }
+        }
+        &--date{
+            &:before {
+                content: url(../assets/time.svg);
+                float: left;
+                margin-top: 1px;
+                margin-right: 5px;
+            }
+        } 
+        &--price{
+            font-family: 'NotoSansJP Bold';
+            font-size: 3rem;
+            margin-top: 0;
+            line-height: 80%;
+            justify-self: end;
+        }
+    }
+
+
+    &__actions{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 1rem;
+        //justify-items: start;
+
+        &--first{
+            justify-self:start;
+            padding-left: 0;
+        }
+
+        &--second{
+            justify-self:end;
+        }
+
+        &--third{
+            justify-self:start;
+        }
+        
+    }
+
+    &--highlighted{
+        border: 2px $primary-accent-color;
+        border-style: solid;
+    }
+}
+
+@media (max-width: 840px) { 
+    .card{
+        width: 70%;
+    }
+    
+ }
+
+@media (max-width: 576px) { 
+    .card{
+        width: 70%;
+    }
+ }

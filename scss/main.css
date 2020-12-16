@@ -1,0 +1,282 @@
+.btn {
+  font-size: 1rem;
+  padding: 10px 25px;
+  border-radius: 3px;
+  color: #2B3B5A;
+  font-family: 'NotoSansJP Medium';
+}
+
+.btn:active {
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn--primary {
+  background-color: #F0C12F;
+  border: 2px solid #F0C12F;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn--secondary {
+  background-color: #fff;
+  border: 2px solid #3D5980;
+  color: #3D5980;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn--secondary:before {
+  content: url(../assets/heartIcon.svg);
+  float: left;
+  margin-top: 1px;
+  margin-right: 5px;
+}
+
+.btn--tertiary {
+  border: none;
+  background: none;
+  text-shadow: rgba(0, 0, 0, 0.1) 0 1px;
+}
+
+.btn--tertiary:before {
+  content: url(../assets/arrow.svg);
+  float: left;
+  margin-top: -2px;
+  margin-right: 5px;
+}
+
+.btn--tertiary:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+}
+
+.label {
+  font-family: 'NotoSansJP Regular';
+  font-size: 14px;
+}
+
+.star-rating {
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+}
+
+.star-rating--like {
+  background: #F0C12F;
+}
+
+.star-rating--dislike {
+  background: #FFEDB8;
+}
+
+@font-face {
+  font-family: NotoSansJP Light;
+  src: url(../assets/NotoSansJP-Light.otf);
+}
+
+@font-face {
+  font-family: NotoSansJP Regular;
+  src: url(../assets/NotoSansJP-Regular.otf);
+}
+
+@font-face {
+  font-family: NotoSansJP Medium;
+  src: url(../assets/NotoSansJP-Medium.otf);
+}
+
+@font-face {
+  font-family: NotoSansJP Bold;
+  src: url(../assets/NotoSansJP-Bold.otf);
+}
+
+body {
+  background-color: #EAF3FA;
+}
+
+h1 {
+  color: #2B3B5A;
+  font-family: NotoSansJP Regular;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  grid-row-gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@font-face {
+  font-family: NotoSansJP Light;
+  src: url(../assets/NotoSansJP-Light.otf);
+}
+
+@font-face {
+  font-family: NotoSansJP Regular;
+  src: url(../assets/NotoSansJP-Regular.otf);
+}
+
+@font-face {
+  font-family: NotoSansJP Medium;
+  src: url(../assets/NotoSansJP-Medium.otf);
+}
+
+@font-face {
+  font-family: NotoSansJP Bold;
+  src: url(../assets/NotoSansJP-Bold.otf);
+}
+
+@font-face {
+  font-family: NotoSansJP Light;
+  src: url(../assets/NotoSansJP-Light.otf);
+}
+
+@font-face {
+  font-family: NotoSansJP Regular;
+  src: url(../assets/NotoSansJP-Regular.otf);
+}
+
+@font-face {
+  font-family: NotoSansJP Medium;
+  src: url(../assets/NotoSansJP-Medium.otf);
+}
+
+@font-face {
+  font-family: NotoSansJP Bold;
+  src: url(../assets/NotoSansJP-Bold.otf);
+}
+
+body {
+  font-family: 'NotoSansJP Regular';
+  color: #2B3B5A;
+}
+
+.card {
+  padding: 40px;
+  background: #ffffff;
+  max-width: 900px;
+  border-radius: 7px;
+  margin: 60px auto;
+  -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+          box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+.card .inner-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 2rem;
+}
+
+.card__header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 2fr;
+      grid-template-columns: 1fr 1fr 2fr;
+}
+
+.card__title {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-family: 'NotoSansJP Bold';
+}
+
+.card__location {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.card__location:before {
+  content: url(../assets/location.svg);
+  float: left;
+  margin-top: 1px;
+  margin-right: 5px;
+}
+
+.card__rating {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  margin-bottom: -2px;
+}
+
+.card__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
+
+.card__content--service:before {
+  content: url(../assets/check.svg);
+  float: left;
+  margin-top: 1px;
+  margin-right: 5px;
+}
+
+.card__content--date:before {
+  content: url(../assets/time.svg);
+  float: left;
+  margin-top: 1px;
+  margin-right: 5px;
+}
+
+.card__content--price {
+  font-family: 'NotoSansJP Bold';
+  font-size: 3rem;
+  margin-top: 0;
+  line-height: 80%;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.card__actions {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.card__actions--first {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  padding-left: 0;
+}
+
+.card__actions--second {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.card__actions--third {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.card--highlighted {
+  border: 2px #F0C12F;
+  border-style: solid;
+}
+
+@media (max-width: 840px) {
+  .card {
+    width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
